@@ -1,0 +1,48 @@
+/*
+  Tokens de design extraídos dos protótipos (Login / Termos / Lista de Tarefas).
+  Mantenha esses valores como fonte única de verdade para cor, tipografia e espaçamento.
+*/
+:root {
+  /* Gradiente de fundo (diagonal: teal -> azul-marinho -> ameixa) */
+  --gradient-bg: linear-gradient(135deg, #004e7b 0%, #0b1233 45%, #1a1030 70%, #321032 100%);
+
+  /* Cores de marca */
+  --color-primary: #0b31b2;
+  --color-primary-hover: #0a2a99;
+  --color-accent-cyan: #01afca;
+  --color-success: #a9d6a5;
+  --color-success-text: #1f4d20;
+  --color-danger: #e08585;
+  --color-danger-text: #6e1f1f;
+
+  /* Texto sobre fundo escuro */
+  --color-text-on-dark: #f5f7ff;
+  --color-text-on-dark-muted: #c7cde3;
+
+  /* Texto sobre fundo claro (cards/inputs) */
+  --color-text-on-light: #1c1f33;
+  --color-text-on-light-muted: #5b6072;
+
+  --color-surface: #ffffff;
+  --color-surface-border: #d7dcf5;
+  --color-danger-border: #e2b0b0;
+
+  /* Tipografia */
+  --font-display: 'Baloo 2', 'Nunito Sans', sans-serif;
+  --font-body: 'Nunito Sans', 'Baloo 2', sans-serif;
+
+  /* Raios e espaçamentos */
+  --radius-pill: 999px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+
+  --shadow-card: 0 20px 60px rgba(5, 8, 30, 0.45);
+  --focus-ring: 0 0 0 3px rgba(1, 175, 202, 0.45);
+}

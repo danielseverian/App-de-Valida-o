@@ -1,0 +1,58 @@
+@host = http://localhost:3000
+
+@token = eyJhbGciOiJFUzI1NiIsImtpZCI6IjI4NzMwODM5LTBiOWUtNGNhNi05NjVjLWVjMzhiMGVmZDk0ZCIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2N6eHhmdmFtd3hhcHhwc3lrcGFxLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJlNTE5MzA4Zi0zMzg1LTRkN2ItYTljMi00MTFiNTNmZmE2ZjEiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg4MzE1MTQ0LCJpYXQiOjE3ODgzMTE1NDQsImVtYWlsIjoibGV0aWNpYXF1YWRyZUBnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoibGV0aWNpYXF1YWRyZUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibm9tZSI6IkxldGkiLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6ImU1MTkzMDhmLTMzODUtNGQ3Yi1hOWMyLTQxMWI1M2ZmYTZmMSJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzg4MzExNTQ0fV0sInNlc3Npb25faWQiOiJjYzgzYjZkYi0xMDM3LTQ5NzEtYjRiZS1iZGEwYTQ1MTMyNWEiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.gdYNJC98vewU6rTM983TH5Uq-8tZt37j89LHrny_hEB7UPPG8GnW1sazP0dK2IpzQzrENSNl7W6JfsbdD9gqGA
+
+### Cadastro
+POST {{host}}/auth/cadastro
+Content-Type: application/json
+
+{
+    "nome": "Leti",
+    "email": "leticiaquadre@gmail.com",
+    "senha": "senha123"
+}
+
+
+### Login
+# @name login
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "leticiaquadre@gmail.com",
+  "senha": "senha123"
+}
+
+### TAREFAS ###
+
+### Criar tarefa
+POST {{host}}/tarefas
+Content-Type: application/json
+Authorization: Bearer {{login.response.body.token}}
+
+{
+  "nome": "Oficina Jogos",
+  "status": "pendente",
+  "data_come": "2026-08-30",
+  "data_termi": "2026-09-02"
+}
+
+### Listar tarefas
+GET {{host}}/tarefas
+Authorization: Bearer {{login.response.body.token}}
+
+### Editar tarefa (troca o :id pelo id retornado no POST)
+PUT {{host}}/tarefas/2
+Content-Type: application/json
+Authorization: Bearer {{login.response.body.token}}
+
+{
+  "nome": "Oficina Jogos 2D",
+  "status": "em_andamento",
+  "data_come": "2026-08-31",
+  "data_termi": "2026-09-03"
+}
+
+### Excluir tarefa (troca o :id pelo id retornado no POST)
+DELETE {{host}}/tarefas/4
+Authorization: Bearer {{login.response.body.token}}

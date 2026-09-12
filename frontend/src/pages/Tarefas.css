@@ -1,0 +1,84 @@
+.tarefas-page {
+    min-height: 100vh;
+    padding: 32px;
+}
+
+.botao-sair,
+.botao-cadastrar {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botao-sair {
+    background-color: #ff7b73;
+    color: #252525;
+}
+
+.botao-cadastrar {
+    background-color: #b9e6a9;
+    color: #252525;
+    margin-bottom: 14px;
+}
+
+.tarefas-container {
+    margin-top: 30px;
+}
+
+.tarefas-tabela {
+    width: 100%;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    color: #252525;
+    border-radius: 16px;
+}
+
+.tarefas-tabela th,
+.tarefas-tabela td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    text-align: left;
+}
+
+.tarefas-tabela th {
+    font-weight: 700;
+}
+
+.status {
+    display: inline-block;
+    min-width: 80px;
+    padding: 5px 10px;
+    border-radius: 14px;
+    background-color: #cecece;
+    color: #030303;
+    font-size: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.acoes-tarefa {
+    white-space: nowrap;
+}
+
+.botao-editar,
+.botao-excluir {
+    padding: 4px 8px;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.botao-editar {
+    color: #16877c;
+}
+
+.botao-excluir {
+    color: #db4d5c;
+}

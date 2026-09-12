@@ -1,0 +1,57 @@
+.cadastro-field-gap {
+  margin-top: 16px;
+}
+
+.cadastro-senhas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+@media (max-width: 560px) {
+  .cadastro-senhas {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cadastro-termos {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--color-text-on-dark-muted);
+  cursor: pointer;
+}
+
+.cadastro-termos input {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.cadastro-termos a,
+.cadastro-termos__link {
+  color: #6fa8ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.cadastro-termos__link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.cadastro-error {
+  color: #ffb4b4;
+  font-weight: 600;
+  margin-top: 12px;
+  text-align: left;
+}
