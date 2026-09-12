@@ -1,39 +1,41 @@
-# Jornada Fullstack — Organizador de Tarefas
+# Projeto Fullstack — Organizador de Tarefas
 
-Projeto desenvolvido durante a Jornada Fullstack utilizando React, Node.js e Supabase.
+Aplicação Fullstack desenvolvida para gerenciamento e organização de tarefas.
 
-## Como executar
+## 🛠️ Tecnologias Utilizadas
 
-### Backend
+- **Frontend:** React.js, Vite
+- **Backend:** Node.js, Fastify / Express API
+- **Banco de Dados & Autenticação:** Supabase
 
-Abra o terminal e execute:
+---
+
+## 🚀 Como Executar o Projeto
+
+### 1. Backend
+
+No terminal, acesse a pasta do backend e inicie o servidor:
 
 ```bash
 cd backend
 npm install
 npm run dev
-```
+O backend estará rodando em http://localhost:3000.
 
-Deverá aparecer a mensagem:
+2. Frontend
+Em outro terminal, acesse a pasta do frontend e inicie a aplicação:
 
-```text
-Servidor rodando na porta 3000
-```
-
-### Frontend
-
-Mantenha o backend aberto. Abra outro terminal e execute:
-
-```bash
+Bash
 cd frontend
 npm install
 npm run dev
-```
+Acesse o sistema pelo navegador em http://localhost:5173.
 
-Acesse o endereço exibido no terminal, normalmente:
+🔑 Fluxo de Autenticação
+Faça o cadastro com seu e-mail na tela inicial.
 
-```text
-http://localhost:5173
-```
+Acesse sua caixa de e-mail e clique no link de confirmação.
 
-Após realizar o cadastro, confirme a conta pelo link enviado ao seu e-mail. Caso apareça o aviso de “Página não encontrada” depois de acessar o link, volte à tela do sistema e clique no botão **“Já confirmei, entrar”**.
+Se ao clicar no link aparecer a mensagem "Página não encontrada", basta retornar para a aplicação no navegador e clicar no botão "Já confirmei, entrar".
+
+Desenvolvido por Daniel Severian 🚀
