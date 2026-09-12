@@ -1,41 +1,41 @@
-# Projeto Fullstack — Organizador de Tarefas
+# Fullstack Task Manager
 
-Aplicação Fullstack desenvolvida para gerenciamento e organização de tarefas.
+A modern fullstack application for task management and organization.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tech Stack
 
 - **Frontend:** React.js, Vite
 - **Backend:** Node.js, Fastify / Express API
-- **Banco de Dados & Autenticação:** Supabase
+- **Database & Auth:** Supabase
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 🚀 How to Run the Project
 
 ### 1. Backend
 
-No terminal, acesse a pasta do backend e inicie o servidor:
+In your terminal, navigate to the backend folder and start the server:
 
 ```bash
 cd backend
 npm install
 npm run dev
-O backend estará rodando em http://localhost:3000.
+The backend will run on http://localhost:3000.
 
 2. Frontend
-Em outro terminal, acesse a pasta do frontend e inicie a aplicação:
+In a second terminal, navigate to the frontend folder and start the app:
 
 Bash
 cd frontend
 npm install
 npm run dev
-Acesse o sistema pelo navegador em http://localhost:5173.
+Open your browser and navigate to http://localhost:5173.
 
-🔑 Fluxo de Autenticação
-Faça o cadastro com seu e-mail na tela inicial.
+🔑 Authentication Flow
+Register using your email address on the sign-up page.
 
-Acesse sua caixa de e-mail e clique no link de confirmação.
+Check your inbox and click the confirmation link.
 
-Se ao clicar no link aparecer a mensagem "Página não encontrada", basta retornar para a aplicação no navegador e clicar no botão "Já confirmei, entrar".
+If you see a "Page not found" message after clicking the link, simply return to the app UI and click "Already confirmed, Sign In".
 
-Desenvolvido por Daniel Severian 🚀
+Developed by Daniel Severian 🚀
